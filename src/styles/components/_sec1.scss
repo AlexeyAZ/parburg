@@ -1,0 +1,46 @@
+.sec1 {
+    background-image: url("../img/sec1-bg.jpg");
+    padding: 3vw 80px;
+    color: white;
+    height: 100vh;
+
+    @include media(w768) {
+        padding: 30px 10px;
+        height: auto;
+    }
+
+    &__outer-container {
+        border: 5px solid $brown-main;
+        height: 100%;
+        padding: 20px 0 80px;
+
+        @include media(w768) {
+            border-width: 2px;
+            padding: 20px 0;
+            height: auto;
+        }
+    }
+
+    &__title {
+
+        @include media(w1600) {
+            font-size: 50px;
+        }
+
+        @include media(w768) {
+            font-size: 28px;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 7vw;
+
+        @include media(w1600) {
+            margin-bottom: 4vw;
+        }
+
+        // @include media(w768) {
+        //     font-size: 20px;
+        // }
+    }
+}

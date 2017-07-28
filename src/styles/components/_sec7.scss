@@ -1,0 +1,28 @@
+.sec7 {
+    background-image: url("../img/sec7-bg.jpg");
+    padding-top: 70px;
+    padding-bottom: 115px;
+
+    @include media(w768) {
+        padding-bottom: 0;
+    }
+
+    &__head {
+        color: white;
+        text-align: center;
+    }
+
+    &__head-decor {
+        display: block;
+        margin-bottom: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 373px;
+
+        @include media(w768) {
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+        }
+    }
+}

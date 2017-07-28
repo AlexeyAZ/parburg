@@ -1,0 +1,39 @@
+extends templates/layout
+
+block vars
+    - var title = 'Парбург'
+
+block content
+    include components/form
+    section.sec.thanks
+        div.outer-container.sec1__outer-container
+            include components/header
+            div.container.ta-center.color-white
+                p.thanks__heading.
+                    <span id="thanksName"></span> менеджеры<br> уже занимаются<br> вашей заявкой
+                p.thanks__title.
+                    Мы свяжемся с Вами в ближайшее время
+                p.thanks__subtitle.
+                    График работы с 9.00 до 18.00<br> Поэтому, если вы оставили заявку<br> в нерабочее время, мы перезвоним<br> вам на следующий рабочий день
+                //- h1.bold.tt-uppercase.
+                //-     Станьте владельцем бургер-бара с авторским меню
+                //- h3.sec1__subtitle.
+                //-     Зарабатывайте от 250 000 рублей в месяц
+                div.thanks__buttons
+                    a(href="doc/mk.pdf" target="_blank").btn-round.thanks__buttons-link.
+                        Открыть презентацию
+                    a(href="/index.html").btn-round.thanks__buttons-link.
+                        Вернуться на сайт
+        //- include components/header
+        //- div.container
+        //-     p.thanks__heading.
+        //-         <span id="thanksName"></span> менеджеры уже занимаются вашей заявкой
+        //-     p.thanks__title.
+        //-         Мы свяжемся с Вами в ближайшее время
+        //-     div.thanks__buttons
+        //-         a(href="doc/mk.pdf" target="_blank").btn-round.btn-round_download.
+        //-             Открыть презентацию
+        //-         a(href="/index.html").thanks__links-link.
+        //-             Вернуться на сайт
+        //-     p.thanks__subtitle.
+        //-         График работы с 9.00 до 23.00 Поэтому, если вы оставили заявку в нерабочее время, мы перезвоним вам на следующий рабочий день

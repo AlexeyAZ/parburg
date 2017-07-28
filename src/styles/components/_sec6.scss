@@ -1,0 +1,190 @@
+.sec6 {
+    overflow: hidden;
+    padding-top: 85px;
+    padding-bottom: 150px;
+
+    @include media(w1024) {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    @include media(w768) {
+        padding-top: 50px;
+        padding-bottom: 90px;
+    }
+
+    &__decor {
+        position: absolute;
+
+        &_left {
+            top: 20%;
+            left: 0;
+
+            @include media(w1024) {
+                top: 20px;
+                max-width: 270px;
+            }
+
+            @include media(w768) {
+                transform: translateX(-20%);
+                top: 45px;
+            }
+        }
+
+        &_right {
+            left: 68%;
+            top: 20%;
+
+            @include media(w1024) {
+                top: 22%;
+                left: 75%;
+                max-width: 450px;
+            }
+
+            @include media(w768) {
+                transform: translate(80%, -35%);
+                top: auto;
+                left: auto;
+                bottom: 0;
+                right: 0;
+                max-width: 220px;
+            }
+        }
+    }
+
+    &__row {
+        display: flex;
+        margin-bottom: 40px;
+
+        @include media(w768) {
+            display: block;
+        }
+    }
+
+    &__col {
+        flex-basis: 50%;
+        flex-grow: 1;
+        flex-shrink: 0;
+
+        &_left {
+            display: flex;
+            flex-flow: column;
+        }
+    }
+
+    &__note {
+        background-color: rgba(236,237,237, 0.93);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 30px;
+        flex-basis: 50%;
+
+        h3 {
+            flex-shrink: 1;
+        }
+
+        @include media(w768) {
+            margin-bottom: 30px;
+            padding: 60px 30px;
+        }
+    }
+
+    &__img-wrap {
+        background-image: url("../img/sec6-img.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        flex-basis: 50%;
+
+        @include media(w768) {
+            background-image: none;
+            overflow: hidden;
+            margin-left: -$container-side-padding-tablet;
+            margin-right: -$container-side-padding-tablet;
+            height: 24vw;
+        }
+    }
+
+    &__img {
+        display: none;
+        width: 100%;
+
+        @include media(w768) {
+           display: block;
+        }
+    }
+
+    &__investments {
+        background-color: $red-main;
+        color: white;
+        text-align: center;
+        padding: 180px 60px 140px;
+
+        @include media(w1024) {
+            padding: 95px 30px 75px;
+        }
+
+        @include media(w768) {
+            margin-left: -$container-side-padding-tablet;
+            margin-right: -$container-side-padding-tablet;
+            padding: 60px 30px;
+        }
+    }
+
+    &__investments-title {
+        line-height: 1.5;
+    }
+
+    &__investments-summ {
+        border: 2px solid white;
+        font-weight: bold;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 1em;
+        padding: 10px 10px 20px;
+
+        span {
+            font-size: 65px;
+
+            @include media(w1024) {
+                font-size: 32px;
+            }
+        }
+
+        @include media(w1024) {
+            font-size: 20px;
+        }
+    }
+
+    &__investments-text {
+        line-height: 1.5;
+        padding: 0 10px;
+
+        @include media(w1280) {
+            padding: 0;
+        }
+
+        @include media(w1024) {
+            padding: 0 30px;
+        }
+    }
+
+    &__btn-wrap {
+        text-align: center;
+    }
+
+    &__btn {
+
+        &:after {
+            color: black;
+
+            @include media(w768) {
+                transform: translate(-50%, 10px);
+                display: block;
+                top: 100%;
+                left: 50%;
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.input {
+    @include placeholder {
+        color: white;
+    }
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-radius: calc(#{$btn-height-pc} / 2);
+    border: 2px solid white;
+    outline: none;
+    display: inline-block;
+    color: white;
+    font-family: "PermianSerifTypeface", sans-serif;
+    font-size: $input-font-size-pc;
+    padding: 0 35px;
+    height: $btn-height-pc;
+    width: 100%;
+
+    @include media (w1024) {
+        border-radius: calc(#{$btn-height-tablet} / 2);
+        padding: 0 25px;
+        font-size: $input-font-size-tablet;
+        height: $btn-height-tablet;
+    }
+
+    @include media (w768) {
+        border-radius: calc(#{$btn-height-mobile} / 2);
+        font-size: $input-font-size-mobile;
+        padding: 0 20px;
+        height: $btn-height-mobile;
+    }
+
+    &_city {
+        background-image: url("../img/input-map.png");
+        background-position: 20px center;
+        padding-left: 60px;
+    }
+
+    &_phone {
+        background-image: url("../img/galka-white.svg");
+        background-position: right 20px center;
+        background-repeat: no-repeat;
+        background-size: 0;
+
+        @include media (w1280) {
+            background-position: right 10px center;
+        }
+
+        @include media (w768) {
+            background-position: right 20px center;
+        }
+    }
+
+    &_success {
+        background-size: 20px !important;
+
+        @include media (w1024) {
+            background-size: 14px !important;
+        }
+
+        @include media (w768) {
+            background-size: 20px !important;
+        }
+    }
+}
+
+.select {
+    background-color: white;
+    background-repeat: no-repeat;
+    border-radius: $btn-height-pc / 2;
+    border-radius: calc(#{$btn-height-pc} / 2);
+    border: 2px solid #d7d7d7;
+    outline: none;
+    display: inline-block;
+    color: #6b6b6b;
+    font-family: "PFHandBookPro", sans-serif;
+    font-size: $input-font-size-pc;
+    padding: 0 35px;
+    height: $btn-height-pc;
+
+    @include media (w1024) {
+        border-radius: $btn-height-tablet / 2;
+        border-radius: calc(#{$btn-height-tablet} / 2);
+        font-size: $input-font-size-tablet;
+        height: $btn-height-tablet;
+    }
+
+    @include media (w768) {
+        border-radius: $btn-height-mobile / 2;
+        border-radius: calc(#{$btn-height-mobile} / 2);
+        font-size: $input-font-size-mobile;
+        padding: 0 20px;
+        height: $btn-height-mobile;
+    }
+}

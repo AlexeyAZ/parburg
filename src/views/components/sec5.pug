@@ -1,0 +1,19 @@
+- var sec5List = [[1, "Право пользования брендом и товарным знаком «Парбург»"], [4, "Обучение владельца и персонала"], [2, "Консультационная поддержка на всех этапах персональным менеджером 24/7"], [5, "Программное обеспечение и настройка контроллинг-систем"], [3, "Дизайн-проект будущего заведения и рекомендации по проведению ремонта"], [6, "Оригинальные рецепты фирменных блюд"]];
+
+section.sec.sec5
+    div.container
+        h3.tt-uppercase.ta-center.bold.mb1.
+            Во франшизу включены:
+        div.sec5__table
+            each item, index in sec5List
+                div.sec5__table-row
+                    div.sec5__table-col.sec5__table-col_number.
+                        #{item[0]}.
+                    div.sec5__table-col
+                        p.m.sec5__table-text.
+                            #{item[1]}
+        p.m.ta-center.mb1.sec5__subtitle.
+            Подробности состава франшизы смотрите<br> в нашей презентации
+        div.ta-center
+            button.btn-round.btn-round_download.js-small-btn.sec5__btn.
+                Скачать презентацию

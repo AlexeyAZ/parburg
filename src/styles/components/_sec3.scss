@@ -1,0 +1,140 @@
+.sec3 {
+
+    @include media(w768) {
+        background-image: url("../img/sec3-bg-mobile.jpg");
+    }
+    
+    &__top {
+        background-image: url("../img/sec3-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-left: -70px;
+        margin-right: -70px;
+        padding-top: 8vw;
+        padding-bottom: 15vw;
+
+        @include media(w768) {
+            background-image: none;
+            margin-left: 0;
+            margin-right: 0;
+            padding-top: 40px;
+        }
+    }
+
+    &__top-heading {
+
+        @include media(w768) {
+            line-height: 1.5;
+        }
+    }
+
+    &__center {
+        margin-top: -12vw;
+        padding-bottom: 9vw;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+
+        @include media(w768) {
+            display: block;
+            margin-left: -$container-side-padding-tablet;
+            margin-right: -$container-side-padding-tablet;
+        }
+    }
+
+    &__col {
+        width: 48%;
+
+        @include media(w768) {
+            margin-bottom: 20px;
+            width: auto;
+        }
+    }
+
+    &__note {
+        background-color: $gray-main;
+        text-align: center;
+        padding: 20px;
+        height: 100%;
+    }
+
+    &__note-content {
+        border: 5px solid white;
+        padding: 90px 0 100px;
+        height: 100%;
+
+        @include media(w1024) {
+            border-width: 2px;
+            padding: 50px 0;
+        }
+    }
+
+    &__title {
+        
+        @include media(w1024) {
+            font-size: 16px;
+        }
+    }
+
+    &__note-decor {
+        margin-bottom: 30px;
+    }
+
+    &__note-text {
+        padding: 0 80px;
+
+        @include media(w1280) {
+            padding: 0 40px;
+        }
+
+        @include media(w1024) {
+            font-size: 18px;
+            padding: 0 10px;
+        }
+    }
+
+    &__bottom {
+        background-image: url("../img/sec5-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: -70px;
+        margin-right: -70px;
+        padding: 85px 0 60px;
+
+        @include media(w768) {
+            margin-left: 0;
+            margin-right: 0;
+            padding: 60px 0 70px;
+        }
+    }
+
+    &__bottom-title {
+        line-height: 1.5;
+
+        @include media(w768) {
+            
+            br:not(.br-mobile) {
+                display: none;
+            }
+        }
+        
+    }
+
+    &__bottom-btn {
+
+        &:after {
+            color: black;
+
+            @include media(w768) {
+                transform: translate(-50%, 10px);
+                display: block;
+                top: 100%;
+                left: 50%;
+            }
+        }
+    }
+}

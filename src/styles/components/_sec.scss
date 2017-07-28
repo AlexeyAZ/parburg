@@ -1,0 +1,13 @@
+.sec {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 70px;
+    padding-right: 70px;
+    position: relative;
+
+    @include media(w768) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
